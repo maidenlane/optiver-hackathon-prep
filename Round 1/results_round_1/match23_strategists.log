@@ -1,0 +1,4 @@
+2020-03-12 15:45:30,840 [INFO   ] [APP] autotrader started with arguments={-c}
+2020-03-12 15:45:30,840 [INFO   ] [APP] configuration={"Execution":{"Host":"172.16.238.10","Port":12345},"Information":{"AllowBroadcast":true,"Interface":"0.0.0.0","ListenAddress":"172.16.238.255","Port":12346},"TeamName":"strategists","Secret":"e3e63acda29f4e9fb8400c0748b16c73"}
+2020-03-12 16:27:16,862 [INFO   ] [TRADER] lost connection on execution channel
+2020-03-12 16:27:16,862 [INFO   ] [APP] closing event loop
