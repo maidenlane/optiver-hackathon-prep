@@ -15,8 +15,8 @@ tally = {i: {"pnl": 0, "fees": 0, "buy_vol": 0, "sell_vol": 0} for i in traders}
 # Sum all the values.
 for df in matches:
     for i in traders:
-        tally[i]['pnl'] += df.loc[(df['Competitor'] == i) & (df["Operation"] == 'Fill')]['ProfitLoss'].sum()
-        tally[i]['fees'] += df.loc[(df['Competitor'] == i) & (df["Operation"] == 'Fill')]['Fee'].sum()
+        tally[i]['pnl'] += df.loc[(df['Competitor'] == i) & (df["Operation"] == 'Fill')]['ProfitLoss'].max()
+        tally[i]['fees'] += df.loc[(df['Competitor'] == i) & (df["Operation"] == 'Fill')]['TotalFees'].max()
         tally[i]['buy_vol'] += df.loc[(df['Competitor'] == i) & (df["Operation"] == 'Fill')]['BuyVolume'].max()
         tally[i]['sell_vol'] += df.loc[(df['Competitor'] == i) & (df["Operation"] == 'Fill')]['SellVolume'].max()
 
