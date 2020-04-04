@@ -1,3 +1,16 @@
+
+##### Visualise specific match data features with `visualise_quotes.py`
+##### Display aggregate results for each round with `aggregate_scoreboard.py`
+##### Display single match results with `scoreboard.py`
+
+### Results - team "strategists":
+
+Round 1: placed 9th of 74 teams.
+
+Round 2: placed 4th of 99 teams.
+
+Round 3: knocked out in round 3 of 5, 101 teams.
+
 ### 5 pricing models
 1. Spread /2, naive theoretical price.
 2. Average of book levels 1-3.
