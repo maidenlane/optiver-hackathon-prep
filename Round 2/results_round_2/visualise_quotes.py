@@ -26,8 +26,8 @@ trader = "TeamJ"    # winners
 # trader = "Tradies"     # fourth place
 # trader = "Charity"     #
 
-# action = "Insert"
-action = "Fill"
+action = "Insert"
+# action = "Fill"
 
 default_quote_size = 15   # indentify competitor quotes > this number
 
@@ -78,6 +78,7 @@ print("Total notable competitior " + action + " asks:", comp_asks_notable_volume
 
 # Print the notable bids to verify how quote volume interacts with inventory.
 # print(comp_bids_notable_volume)
+print(trader, "bid inserts.")
 print(competitor_bid_quotes)
 
 plt.plot(etf_price, color='lightblue', linewidth=1, label="ETF Price", alpha=0.4)
