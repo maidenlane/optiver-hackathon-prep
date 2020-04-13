@@ -77,7 +77,9 @@ print("Total notable competitior " + action + " asks:", comp_asks_notable_volume
 
 # Print the notable bids to verify how quote volume interacts with inventory.
 # print(comp_bids_notable_volume)
-# print(competitor_bid_quotes)
+
+print(trader, "bid inserts.")
+print(competitor_bid_quotes)
 
 plt.plot(etf_price, color='lightblue', linewidth=1, label="ETF Price", alpha=0.4)
 plt.plot(future_price, color='purple', lw=1, label="Future Price")
